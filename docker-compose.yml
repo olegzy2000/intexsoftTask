@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:latest
+    container_name: intexsoft_container
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: banks_system_db
+      MYSQL_USER: oleg
+      MYSQL_PASSWORD: oleg0809
+    ports:
+      - "3306:3306"
+    build: .
